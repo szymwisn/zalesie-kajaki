@@ -1,0 +1,21 @@
+---
+---
+
+$basic-text-color: #8191A7;
+$heading-text-color: #334E72;
+$menu-text-color: #2B2E32;
+$yellow: #FBFF4A;
+$dark-blue: #192B43;
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: $basic-text-color;
+}
+
+h2 {
+    font-size: 2,25em;
+    text-align: center;
+    color: $heading-text-color;
+}
+
