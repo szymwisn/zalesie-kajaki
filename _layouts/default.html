@@ -8,6 +8,10 @@
     <meta name="author" content="name">
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -61,7 +65,7 @@
     </nav>
 
     <section class="hero">
-        <div class="container container--wide">
+        <div class="container container--regular">
             <h1>Szukasz sposobu na aktywną formę spędzania wolnego czasu?</h1>
             <form action="#routes">
                 <input type="submit" value="SPRAWDŹ NASZĄ OFERTĘ"/>
@@ -72,7 +76,7 @@
     <section class="about">
         <div class="container container--regular">
             <h2>Kim Jesteśmy?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
         </div>
     </section>
 
@@ -94,45 +98,42 @@
     <section class="routes">
         <div class="container container--regular">
             <h2>Nasze Trasy</h2>
-            <span>Spływy do 100 osób. Istnieje możliwość dowozu kajaków w wybrane miejsce. Każda z tras może być dowolnie modyfikowana i dostosowywana do Państwa preferencji. </span>
+            <p class="text">Spływy do 100 osób. Istnieje możliwość dowozu kajaków w wybrane miejsce. Każda z tras może być dowolnie modyfikowana i dostosowywana do Państwa preferencji. </p>
             <div class="routes__boxes">
-                <div class="route__box">
-                    <img src="" alt="">
-                    <h3>Zalesie/Tumiany -> Barczewo</h3>
-                    <p>In fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie. Interdum velit laoreet id donec ultrices tincidunt.</p>
-                    <div class="price">
-                        <span>60 zł</span> / kajak
+                <div class="routes__box">
+                    <img src="/assets/img/slider-1.jpg" alt="">
+                    <div class="container container--wide">
+                        <h3>Zalesie/Tumiany -> Barczewo</h3>
+                        <p>In fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie. Interdum velit laoreet id donec ultrices tincidunt.</p>
+                        <form action="#">
+                            <input type="submit" value="dowiedz się więcej"/>
+                        </form>
                     </div>
-                    <form action="#">
-                        <input type="submit" value="dowiedz się więcej"/>
-                    </form>
-                    <span>Wynajęcie kajaków na określony czas: 10 zł/h</span>
                 </div>
-                <div class="route__box">
-                    <img src="" alt="">
-                    <h3>Zalesie/Tumiany -> Barczewo</h3>
-                    <p>In fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie. Interdum velit laoreet id donec ultrices tincidunt.</p>
-                    <div class="price">
-                        <span>60 zł</span> / kajak
+                <div class="routes__box">
+                    <img src="/assets/img/slider-1.jpg" alt="">
+                    <div class="container container--wide">
+                        <h3>Zalesie/Tumiany -> Barczewo</h3>
+                        <p>In fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie. Interdum velit laoreet id donec ultrices tincidunt.</p>
+                        <form action="#">
+                            <input type="submit" value="dowiedz się więcej"/>
+                        </form>
                     </div>
-                    <form action="#">
-                        <input type="submit" value="dowiedz się więcej"/>
-                    </form>
-                    <span>Wynajęcie kajaków na określony czas: 10 zł/h</span>
                 </div>
-                <div class="route__box">
-                    <img src="" alt="">
-                    <h3>Zalesie/Tumiany -> Barczewo</h3>
-                    <p>In fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie. Interdum velit laoreet id donec ultrices tincidunt.</p>
-                    <div class="price">
-                        <span>60 zł</span> / kajak
+                <div class="routes__box">
+                    <img src="/assets/img/slider-1.jpg" alt="">
+                    <div class="container container--wide">
+                        <h3>Zalesie/Tumiany -> Barczewo</h3>
+                        <p>In fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie. Interdum velit laoreet id donec ultrices tincidunt.</p>
+                        <form action="#">
+                            <input type="submit" value="dowiedz się więcej"/>
+                        </form>
                     </div>
-                    <form action="#">
-                        <input type="submit" value="dowiedz się więcej"/>
-                    </form>
-                    <span>Wynajęcie kajaków na określony czas: 10 zł/h</span>
                 </div>
             </div>
+            <p class="info">
+                Wynajęcie kajaków na określony czas: <b>10</b> zł/h
+            </p>
         </div>
     </section>
     
@@ -143,7 +144,8 @@
                 <div class="post">
                     <span class="date">23.07.2019</span>
                     <h4 class="post__title">Lorem ipsum dolor sit</h4>
-                    <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                 </div>
                 <div class="post">
                     <span class="date">23.07.2019</span>
@@ -159,8 +161,21 @@
         </div>
     </section>
 
-    <section class="map">
+    <section class="maps">
         <h2>Znajdź Nas Na Mapie</h2>
+        <div id="map"></div>
+        <script>
+            let map = L.map('map').setView([50.5, 30.5], 20);
+            
+            L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=I7qY8rAcknYMe6Q4PvcQ', {
+                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>',
+            }).addTo(map);
+
+            let marker = L.marker([50.5, 30.5]).addTo(map);
+
+            marker.bindTooltip("Warszawa, Ładna 5/22").openTooltip();
+
+        </script>
     </section>
 
     <footer>

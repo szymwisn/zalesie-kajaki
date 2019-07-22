@@ -8,7 +8,7 @@ h1 {
   color: white; }
 
 h2 {
-  font-size: 2,25em;
+  font-size: 2.25em;
   text-align: center;
   color: #334E72;
   padding-bottom: 40px; }
@@ -21,6 +21,11 @@ h2 {
 
 .container--wide {
   max-width: 90%; }
+
+.text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80%; }
 
 .nav__topbar {
   width: 100%;
@@ -86,29 +91,83 @@ h2 {
   top: -50px;
   left: 0; }
 
-.about p {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center; }
-
 .gallery {
   margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: center; }
   .gallery img {
     width: 31%;
     height: auto;
     padding: 1%; }
 
 .routes {
-  margin-top: 100px; }
+  margin-top: 100px;
+  text-align: center; }
+
+.routes__boxes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  justify-content: space-between; }
+  .routes__boxes input {
+    margin-top: 25px;
+    background-color: #F5F5F5;
+    color: #8B9B9F;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 40px; }
+  .routes__boxes h3 {
+    padding: 20px 0 20px 0; }
+  .routes__boxes input:hover {
+    background-color: #FBFF4A;
+    color: #334E72; }
+
+.info {
+  margin-top: 80px;
+  color: #334E72;
+  font-size: 1.125em; }
+
+.routes__box {
+  max-width: 300px;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05); }
+  .routes__box img {
+    border-radius: 4px;
+    width: 100%; }
 
 .news {
   margin-top: 100px; }
 
-.map {
+.post {
+  margin-top: 80px; }
+
+.post__title {
+  color: #334E72;
+  font-size: 1.5em; }
+
+.post__content {
+  max-width: 800px; }
+
+.maps {
   margin-top: 100px; }
 
+#map {
+  display: block;
+  height: 400px; }
+
+.map {
+  height: 400px;
+  width: 100%; }
+
 footer {
-  margin-top: 100px; }
+  width: 100%;
+  height: 270px;
+  background-color: #192B43; }
