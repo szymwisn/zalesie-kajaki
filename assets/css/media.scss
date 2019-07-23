@@ -1,0 +1,34 @@
+---
+---
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) { 
+    .gallery {
+        .images {
+            img {
+                width: 100% !important;
+            }
+        }
+    }    
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+    .gallery {
+        .images {
+            img {
+                width: 48%;
+            }
+        }
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) { 
+
+ }

@@ -1,4 +1,4 @@
 ---
-title: Kayaks
+title: "Kajaki"
 layout: default
 ---
