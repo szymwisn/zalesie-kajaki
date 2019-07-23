@@ -41,23 +41,23 @@
         </div>
         <div class="nav__bar">
             <div class="container container--wide">
-                <a href="#">logo</a>
+                <a class="logo" href="#">Kajaki Zalesie</a>
                 <div class="nav__navigation">
                     <ul>
                         <li>
-                            <a href="">Strona główna</a>
+                            <a href="/">Strona główna</a>
                         </li>
                         <li>
-                            <a href="">Regulamin</a>
+                            <a href="#">Regulamin</a>
                         </li>
                         <li>
-                            <a href="">Cennik</a>
+                            <a href="#routes">Trasy</a>
                         </li>
                         <li>
-                            <a href="">Galeria</a>
+                            <a href="#gallery">Galeria</a>
                         </li>
                         <li>
-                            <a href="">Kontakt</a>
+                            <a href="#maps">Kontakt</a>
                         </li>
                     </ul>
                 </div>
@@ -76,31 +76,36 @@
 
     <section class="about">
         <div class="container container--regular">
+            <hr>
             <h2>Kim Jesteśmy?</h2>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 🛶. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
+        <div class="container container--regular">
+            <hr>
+        </div>
         <div class="container container--wide">
             <div class="images">
-                <img src="http://lorempixel.com/600/400" alt="">
-                <img src="http://lorempixel.com/600/400" alt="">
-                <img src="http://lorempixel.com/600/400" alt="">
-                <img src="http://lorempixel.com/600/400" alt="">
-                <img src="http://lorempixel.com/600/400" alt="">
-                <img src="http://lorempixel.com/600/400" alt="">
+                <img src="https://placeimg.com/600/400/arch" alt="">
+                <img src="https://placeimg.com/600/400/nature" alt="">
+                <img src="https://placeimg.com/600/400/people" alt="">
+                <img src="https://placeimg.com/600/400/any" alt="">
+                <img src="https://placeimg.com/600/400/animals" alt="">
+                <img src="https://placeimg.com/600/400/tech" alt="">
             </div>
         </div>
     </section>
     
-    <section class="routes">
+    <section class="routes" id="routes">
         <div class="container container--regular">
+            <hr>
             <h2>Nasze Trasy</h2>
             <p class="text">Spływy do 100 osób. Istnieje możliwość dowozu kajaków w wybrane miejsce. Każda z tras może być dowolnie modyfikowana i dostosowywana do Państwa preferencji. </p>
             <div class="routes__boxes">
                 <div class="routes__box">
-                    <img src="/assets/img/slider-1.jpg" alt="">
+                    <img src="https://placeimg.com/600/400/nature" alt="">
                     <div class="container container--wide">
                         <h3>Zalesie/Tumiany -> Barczewo</h3>
                         <p>In fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie. Interdum velit laoreet id donec ultrices tincidunt.</p>
@@ -110,7 +115,7 @@
                     </div>
                 </div>
                 <div class="routes__box">
-                    <img src="/assets/img/slider-1.jpg" alt="">
+                    <img src="https://placeimg.com/600/400/any" alt="">
                     <div class="container container--wide">
                         <h3>Zalesie/Tumiany -> Barczewo</h3>
                         <p>In fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie. Interdum velit laoreet id donec ultrices tincidunt.</p>
@@ -120,7 +125,7 @@
                     </div>
                 </div>
                 <div class="routes__box">
-                    <img src="/assets/img/slider-1.jpg" alt="">
+                    <img src="https://placeimg.com/600/400/arch" alt="">
                     <div class="container container--wide">
                         <h3>Zalesie/Tumiany -> Barczewo</h3>
                         <p>In fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie. Interdum velit laoreet id donec ultrices tincidunt.</p>
@@ -136,8 +141,9 @@
         </div>
     </section>
     
-    <section class="news">
+    <section class="news" id="news">
         <div class="container container--regular">
+            <hr>
             <h2>Aktualności</h2>
             <div class="posts container--text">
                 
@@ -146,13 +152,6 @@
                         <h4 class="post__title">🛶 This is sample test</h4>
                         <p class="post__content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Purus sit amet volutpat consequat mauris. Sit amet consectetur adipiscing elit duis tristique sollicitudin.</p>
 
-</p>
-                    </div>
-                
-                    <div class="post">
-                        <span class="date">23 July 2019</span>
-                        <h4 class="post__title">test</h4>
-                        <p class="post__content"><p>dsadsadsasad</p>
 </p>
                     </div>
                 
@@ -166,11 +165,22 @@
 </p>
                     </div>
                 
+                    <div class="post">
+                        <span class="date">21 December 2013</span>
+                        <h4 class="post__title">🎅 Lorem ipsum dolor sit</h4>
+                        <p class="post__content"><p>Quis vel eros donec ac odio. Odio facilisis mauris sit amet massa vitae tortor. Tempus iaculis urna id volutpat. Est velit egestas dui id. Nunc aliquet bibendum enim facilisis gravida neque. Elementum pulvinar etiam non quam lacus. <strong>Vitae proin</strong> sagittis nisl rhoncus mattis rhoncus urna neque viverra. Non sodales neque sodales ut etiam sit amet nisl purus. Et odio pellentesque diam volutpat commodo.</p>
+
+</p>
+                    </div>
+                
             </div>
         </div>
     </section>
 
-    <section class="maps">
+    <section class="maps" id="maps">
+        <div class="container container--regular">
+            <hr> 
+        </div>       
         <h2>Znajdź Nas Na Mapie</h2>
         <div id="map"></div>
         <script>
@@ -187,44 +197,46 @@
     </section>
 
     <footer>
-        <div class="container container--wide">
-            <a href="#">Logo</a>
-            <div>
-                <span>Menu</span>
-                <ul>
-                    <li>
-                        <a href="">Strona główna</a>
-                    </li>
-                    <li>
-                        <a href="">Regulamin</a>
-                    </li>
-                    <li>
-                        <a href="">Cennik</a>
-                    </li>
-                    <li>
-                        <a href="">Galeria</a>
-                    </li>
-                    <li>
-                        <a href="">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <span>Kontakt</span>
-                <ul>
-                    <li>
-                        <i class="fas fa-globe-europe"></i>
-                        Kajakowa 55, Barczewo
-                    </li>
-                    <li>
-                        <i class="fas fa-phone"></i>
-                        534 311 666
-                    </li>
-                    <li>
-                        <i class="fas fa-envelope"></i>
-                        kajakibwo@gmail.com
-                    </li>
-                </ul>
+        <div class="container container--regular">
+            <div class="footer__elements">
+                <a class="logo" href="#">Kajaki Zalesie</a>
+                <div>
+                    <span>Menu</span>
+                    <ul>
+                        <li>
+                            <a href="#">Strona główna</a>
+                        </li>
+                        <li>
+                            <a href="#">Regulamin</a>
+                        </li>
+                        <li>
+                            <a href="#routes">Trasy</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="#maps">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <span>Kontakt</span>
+                    <ul>
+                        <li>
+                            <i class="fas fa-globe-europe"></i>
+                            Kajakowa 55, Barczewo
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            534 311 666
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            kajakibwo@gmail.com
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>

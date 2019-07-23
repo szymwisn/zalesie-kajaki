@@ -1,9 +1,19 @@
 ---
 ---
 
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) {
-
+@media (max-width: 600px) {
+    .nav__topbar { 
+        ul {
+            float: left;
+            li {
+                padding-left: 0;
+                display: inline;
+            }
+            li:nth-child(odd) {
+                display: none;
+            }
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -15,6 +25,34 @@
             }
         }
     }    
+    .hero {
+        display: none;
+    }
+    
+    .about .container--regular::before {
+        content: '';
+        display: none;
+    }
+
+    .container--regular {
+        max-width: 90%;
+    }
+
+    .nav__bar {
+        .logo {
+            text-align: center;
+            float: none;  
+        }
+        
+        a {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        ul {
+            display: none;
+        }
+    }
 }
 
 // Large devices (desktops, 992px and up)
@@ -28,7 +66,8 @@
     }
  }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) { 
-
+@media (max-width: 1500px) { 
+    .routes__box {
+        margin-bottom: 30px;
+    }
  }

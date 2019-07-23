@@ -1,6 +1,36 @@
+@media (max-width: 600px) {
+  .nav__topbar ul {
+    float: left; }
+    .nav__topbar ul li {
+      padding-left: 0;
+      display: inline; }
+    .nav__topbar ul li:nth-child(odd) {
+      display: none; } }
 @media (max-width: 768px) {
   .gallery .images img {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .hero {
+    display: none; }
+
+  .about .container--regular::before {
+    content: '';
+    display: none; }
+
+  .container--regular {
+    max-width: 90%; }
+
+  .nav__bar .logo {
+    text-align: center;
+    float: none; }
+  .nav__bar a {
+    text-align: center;
+    margin: 0 auto; }
+  .nav__bar ul {
+    display: none; } }
 @media (max-width: 992px) {
   .gallery .images img {
     width: 48%; } }
+@media (max-width: 1500px) {
+  .routes__box {
+    margin-bottom: 30px; } }
