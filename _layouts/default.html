@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="./assets/css/normalize.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/media.css" type="text/css">
-  </head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
   <body>
     <nav class="nav--main">
         <div class="nav__topbar">
@@ -98,7 +99,7 @@
         <div class="container container--regular">
             <h1>Szukasz sposobu na aktywną formę spędzania wolnego czasu?</h1>
             <form action="#routes">
-                <input type="submit" value="SPRAWDŹ NASZĄ OFERTĘ"/>
+                <input data-aos="fade-up" type="submit" value="SPRAWDŹ NASZĄ OFERTĘ"/>
             </form>
         </div>
     </section>
@@ -106,8 +107,8 @@
     <section class="about">
         <div class="container container--regular">
             <hr>
-            <h2>Kim Jesteśmy?</h2>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 🛶. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
+            <h2 data-aos="fade-up">Kim Jesteśmy?</h2>
+            <p data-aos="fade-in" class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 🛶. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
         </div>
     </section>
 
@@ -117,12 +118,12 @@
         </div>
         <div class="container container--wide">
             <div class="images">
-                <img src="https://placeimg.com/600/400/arch" alt="">
-                <img src="https://placeimg.com/600/400/nature" alt="">
-                <img src="https://placeimg.com/600/400/people" alt="">
-                <img src="https://placeimg.com/600/400/any" alt="">
-                <img src="https://placeimg.com/600/400/animals" alt="">
-                <img src="https://placeimg.com/600/400/tech" alt="">
+                <img data-aos="fade-up" src="https://placeimg.com/600/400/arch" alt="">
+                <img data-aos="fade-up" src="https://placeimg.com/600/400/nature" alt="">
+                <img data-aos="fade-up" src="https://placeimg.com/600/400/people" alt="">
+                <img data-aos="fade-up" src="https://placeimg.com/600/400/any" alt="">
+                <img data-aos="fade-up" src="https://placeimg.com/600/400/animals" alt="">
+                <img data-aos="fade-up" src="https://placeimg.com/600/400/tech" alt="">
             </div>
         </div>
     </section>
@@ -130,9 +131,9 @@
     <section class="routes" id="routes">
         <div class="container container--regular">
             <hr>
-            <h2>Nasze Trasy</h2>
-            <p class="text">Spływy do 100 osób. Istnieje możliwość dowozu kajaków w wybrane miejsce. Każda z tras może być dowolnie modyfikowana i dostosowywana do Państwa preferencji. </p>
-            <div class="routes__boxes">
+            <h2 data-aos="fade-up">Nasze Trasy</h2>
+            <p data-aos="fade-in" class="text">Spływy do 100 osób. Istnieje możliwość dowozu kajaków w wybrane miejsce. Każda z tras może być dowolnie modyfikowana i dostosowywana do Państwa preferencji. </p>
+            <div data-aos="fade-up" class="routes__boxes">
                 <div class="routes__box">
                     <img src="https://placeimg.com/600/400/nature" alt="">
                     <div class="container container--wide">
@@ -164,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <p class="info">
+            <p data-aos="fade-up" class="info">
                 Wynajęcie kajaków na określony czas: <b>10</b> zł/h
             </p>
         </div>
@@ -173,10 +174,10 @@
     <section class="news" id="news">
         <div class="container container--regular">
             <hr>
-            <h2>Aktualności</h2>
+            <h2 data-aos="fade-up">Aktualności</h2>
             <div class="posts container--text">
                 {% for post in site.posts %}
-                    <div class="post">
+                    <div data-aos="fade-in" class="post">
                         <span class="date">{{ post.date | date_to_long_string }}</span>
                         <h4 class="post__title">{{ post.title }}</h4>
                         <p class="post__content">{{ post.content }}</p>
@@ -190,8 +191,8 @@
         <div class="container container--regular">
             <hr> 
         </div>       
-        <h2>Znajdź Nas Na Mapie</h2>
-        <div id="map"></div>
+        <h2 data-aos="fade-up">Znajdź Nas Na Mapie</h2>
+        <div data-aos="fade-in" id="map"></div>
     </section>
 
     <footer>
@@ -204,7 +205,7 @@
                         <li>
                             <a href="#">Strona główna</a>
                         </li>
-                        <li>f
+                        <li>
                             <a href="#">Regulamin</a>
                         </li>
                         <li>
@@ -238,7 +239,10 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
