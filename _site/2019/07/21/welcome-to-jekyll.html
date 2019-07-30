@@ -42,6 +42,32 @@
                 </ul>
             </div>
         </div>
+        <div class="nav__hamburger">
+            <div class="hamburger">
+                <div class="hamburger__bar--1"></div>
+                <div class="hamburger__bar--2"></div>
+                <div class="hamburger__bar--3"></div>
+            </div>
+
+            <ul class="hamburger__menu">
+                <li>
+                    <a class="hamburger__entry" href="/2019/07/21/welcome-to-jekyll.html">Strona główna</a>
+                </li>
+                <li>
+                    <a class="hamburger__entry" href="#">Regulamin</a>
+                </li>
+                <li>
+                    <a class="hamburger__entry" href="#routes">Trasy</a>
+                </li>
+                <li>
+                    <a class="hamburger__entry" href="#gallery">Galeria</a>
+                </li>
+                <li>
+                    <a class="hamburger__entry" href="#maps">Kontakt</a>
+                </li>
+            </ul>
+
+        </div>
         <div class="nav__bar">
             <div class="container container--wide">
                 <a class="logo" href="#">Kajaki Zalesie</a>
@@ -186,17 +212,6 @@
         </div>       
         <h2>Znajdź Nas Na Mapie</h2>
         <div id="map"></div>
-        <script>
-            let map = L.map('map').setView([50.5, 30.5], 20);
-            
-            L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=I7qY8rAcknYMe6Q4PvcQ', {
-                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>',
-            }).addTo(map);
-
-            let marker = L.marker([50.5, 30.5]).addTo(map);
-
-            marker.bindTooltip("Warszawa, Ładna 5/22").openTooltip();
-        </script>
     </section>
 
     <footer>
@@ -243,5 +258,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

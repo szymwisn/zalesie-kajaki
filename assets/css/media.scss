@@ -1,21 +1,6 @@
 ---
 ---
 
-@media (max-width: 600px) {
-    .nav__topbar { 
-        ul {
-            float: left;
-            li {
-                padding-left: 0;
-                display: inline;
-            }
-            li:nth-child(odd) {
-                display: none;
-            }
-        }
-    }
-}
-
 // Medium devices (tablets, 768px and up)
 @media (max-width: 768px) { 
     .gallery {
@@ -51,6 +36,23 @@
 
         ul {
             display: none;
+        }
+    }
+
+    .nav__hamburger {
+        display: block;
+    }
+
+    .nav__topbar { 
+        ul {
+            float: left;
+            li {
+                padding-left: 0;
+                display: inline;
+            }
+            li:nth-child(odd) {
+                display: none;
+            }
         }
     }
 }
