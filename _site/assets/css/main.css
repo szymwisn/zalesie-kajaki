@@ -67,7 +67,8 @@ hr {
   bottom: 0;
   right: 0;
   z-index: 9998;
-  display: none; }
+  display: none;
+  padding-left: 0; }
   .hamburger__menu li:first-of-type {
     margin-top: 25vh; }
   .hamburger__menu li {
