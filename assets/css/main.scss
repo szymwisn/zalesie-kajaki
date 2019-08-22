@@ -193,7 +193,7 @@ hr {
 .hero {
     width: 100%;
     height: 600px;
-    background: url(../img/slider-1.jpg);
+    background: url(../img/photos/IMG_20190725_201829.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center, center, center;
@@ -247,10 +247,15 @@ hr {
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: space-around;
-    
-        img {
-            margin: 1%;
+
+        a {
             width: 31%;
+            margin: 1%;
+        }
+
+        img {
+            height: 400px;
+            width: 100%;
             border-radius: 4px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
             -o-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
@@ -274,7 +279,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     margin-top: 80px;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     input {
         margin-top: 25px;
@@ -308,6 +313,7 @@ hr {
 }
 
 .routes__box {
+    margin-top: 50px;
     max-width: 300px;
     border: 1px solid #f2f2f2;
     border-radius: 4px;

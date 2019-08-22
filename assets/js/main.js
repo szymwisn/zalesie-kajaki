@@ -29,9 +29,3 @@ function toggleHamburger() {
     hamburgerIcon.classList.toggle("clicked");
     hamburgerMenu.classList.toggle("show");
 }
-
-
-
-
-
-

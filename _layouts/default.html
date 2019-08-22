@@ -1,248 +1,372 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{{ page.title }}</title>
-    <meta name="author" content="Szymon Wiśniewski">
-    <meta name="description" content="description here">
-    <meta name="keywords" content="keywords,here">
+    <meta name="author" content="Szymon Wiśniewski" />
+    <meta name="description" content="description here" />
+    <meta name="keywords" content="keywords,here" />
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    />
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="{{ "assets/css/normalize.css" | relative_url }}" type="text/css">
-    <link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}" type="text/css">
-    <link rel="stylesheet" href="{{ "assets/css/media.css" | relative_url }}" type="text/css"> -->
-    <link rel="stylesheet" href="./assets/css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
-    <link rel="stylesheet" href="./assets/css/media.css" type="text/css">
+    <link
+      rel="shortcut icon"
+      href="favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/media.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/fslightbox.min.css"
+      type="text/css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
+  </head>
   <body>
     <nav class="nav--main">
-        <div class="nav__topbar">
-            <div class="container container--wide">
-                <ul>
-                    <li>
-                        <i class="fas fa-globe-europe"></i>
-                        Kajakowa 55, Barczewo
-                    </li>
-                    <li>
-                        <i class="fas fa-phone"></i>
-                        534 311 666
-                    </li>
-                    <li>
-                        <i class="fas fa-envelope"></i>
-                        kajakibwo@gmail.com
-                    </li>
-                </ul>
-            </div>
+      <div class="nav__topbar">
+        <div class="container container--wide">
+          <ul>
+            <li>
+              <i class="fas fa-globe-europe"></i>
+              Kajakowa 55, Barczewo
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              534 311 666
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              kajakibwo@gmail.com
+            </li>
+          </ul>
         </div>
-        <div class="nav__hamburger">
-            <div class="hamburger">
-                <div class="hamburger__bar--1"></div>
-                <div class="hamburger__bar--2"></div>
-                <div class="hamburger__bar--3"></div>
-            </div>
+      </div>
+      <div class="nav__hamburger">
+        <div class="hamburger">
+          <div class="hamburger__bar--1"></div>
+          <div class="hamburger__bar--2"></div>
+          <div class="hamburger__bar--3"></div>
+        </div>
 
-            <ul class="hamburger__menu">
-                <li>
-                    <a class="hamburger__entry" href="{{ page.url }}">Strona główna</a>
-                </li>
-                <li>
-                    <a class="hamburger__entry" href="#">Regulamin</a>
-                </li>
-                <li>
-                    <a class="hamburger__entry" href="#routes">Trasy</a>
-                </li>
-                <li>
-                    <a class="hamburger__entry" href="#gallery">Galeria</a>
-                </li>
-                <li>
-                    <a class="hamburger__entry" href="#maps">Kontakt</a>
-                </li>
+        <ul class="hamburger__menu">
+          <li>
+            <a class="hamburger__entry" href="{{ page.url }}">Strona główna</a>
+          </li>
+          <li>
+            <a class="hamburger__entry" href="#">Regulamin</a>
+          </li>
+          <li>
+            <a class="hamburger__entry" href="#routes">Trasy</a>
+          </li>
+          <li>
+            <a class="hamburger__entry" href="#gallery">Galeria</a>
+          </li>
+          <li>
+            <a class="hamburger__entry" href="#maps">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav__bar">
+        <div class="container container--wide">
+          <a class="logo" href="#">Kajaki Zalesie</a>
+          <div class="nav__navigation">
+            <ul>
+              <li>
+                <a href="{{ page.url }}">Strona główna</a>
+              </li>
+              <li>
+                <a href="#">Regulamin</a>
+              </li>
+              <li>
+                <a href="#routes">Trasy</a>
+              </li>
+              <li>
+                <a href="#gallery">Galeria</a>
+              </li>
+              <li>
+                <a href="#maps">Kontakt</a>
+              </li>
             </ul>
-
+          </div>
         </div>
-        <div class="nav__bar">
-            <div class="container container--wide">
-                <a class="logo" href="#">Kajaki Zalesie</a>
-                <div class="nav__navigation">
-                    <ul>
-                        <li>
-                            <a href="{{ page.url }}">Strona główna</a>
-                        </li>
-                        <li>
-                            <a href="#">Regulamin</a>
-                        </li>
-                        <li>
-                            <a href="#routes">Trasy</a>
-                        </li>
-                        <li>
-                            <a href="#gallery">Galeria</a>
-                        </li>
-                        <li>
-                            <a href="#maps">Kontakt</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+      </div>
     </nav>
 
     <section class="hero">
-        <div class="container container--regular">
-            <h1>Szukasz sposobu na aktywną formę spędzania wolnego czasu?</h1>
-            <form action="#routes">
-                <input data-aos="fade-up" type="submit" value="SPRAWDŹ NASZĄ OFERTĘ"/>
-            </form>
-        </div>
+      <div class="container container--regular">
+        <h1>Szukasz sposobu na aktywną formę spędzania wolnego czasu?</h1>
+        <form action="#routes">
+          <input
+            data-aos="fade-up"
+            type="submit"
+            value="SPRAWDŹ NASZĄ OFERTĘ"
+          />
+        </form>
+      </div>
     </section>
 
     <section class="about">
-        <div class="container container--regular">
-            <hr>
-            <h2 data-aos="fade-up">Kim Jesteśmy?</h2>
-            <p data-aos="fade-in" class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 🛶. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
-        </div>
+      <div class="container container--regular">
+        <hr />
+        <h2 data-aos="fade-up">Kim Jesteśmy?</h2>
+        <p data-aos="fade-in" class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat 🛶. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
     </section>
 
     <section class="gallery" id="gallery">
-        <div class="container container--regular">
-            <hr>
+      <div class="container container--regular">
+        <hr />
+      </div>
+      <div class="container container--wide">
+        <div class="images">
+          <a
+            data-aos="fade-up"
+            data-fslightbox="gallery"
+            href="/assets/img/photos/DSC_0226.JPG"
+          >
+            <img src="/assets/img/photos/DSC_0226.JPG" />
+          </a>
+          <a
+            data-aos="fade-up"
+            data-fslightbox="gallery"
+            href="/assets/img/photos/IMG_20190725_195537.jpg"
+          >
+            <img src="/assets/img/photos/IMG_20190725_195537.jpg" />
+          </a>
+          <a
+            data-aos="fade-up"
+            data-fslightbox="gallery"
+            href="/assets/img/photos/IMG_20190725_202440.jpg"
+          >
+            <img src="/assets/img/photos/IMG_20190725_202440.jpg" />
+          </a>
+          <a
+            data-aos="fade-up"
+            data-fslightbox="gallery"
+            href="/assets/img/photos/DSC_0313.JPG"
+          >
+            <img src="/assets/img/photos/DSC_0313.JPG"">
+          </a>
+          <a
+            data-aos="fade-up"
+            data-fslightbox="gallery"
+            href="/assets/img/photos/DSC_0024.JPG"
+          >
+            <img src="/assets/img/photos/DSC_0024.JPG"">
+          </a>
+          <a
+            data-aos="fade-up"
+            data-fslightbox="gallery"
+            href="/assets/img/photos/DSC_0291.JPG"
+          >
+            <img src="/assets/img/photos/DSC_0291.JPG"">
+          </a>
         </div>
-        <div class="container container--wide">
-            <div class="images">
-                <img data-aos="fade-up" src="https://placeimg.com/600/400/arch" alt="">
-                <img data-aos="fade-up" src="https://placeimg.com/600/400/nature" alt="">
-                <img data-aos="fade-up" src="https://placeimg.com/600/400/people" alt="">
-                <img data-aos="fade-up" src="https://placeimg.com/600/400/any" alt="">
-                <img data-aos="fade-up" src="https://placeimg.com/600/400/animals" alt="">
-                <img data-aos="fade-up" src="https://placeimg.com/600/400/tech" alt="">
-            </div>
-        </div>
+      </div>
     </section>
-    
+
     <section class="routes" id="routes">
-        <div class="container container--regular">
-            <hr>
-            <h2 data-aos="fade-up">Nasze Trasy</h2>
-            <p data-aos="fade-in" class="text">Spływy do 100 osób. Istnieje możliwość dowozu kajaków w wybrane miejsce. Każda z tras może być dowolnie modyfikowana i dostosowywana do Państwa preferencji. </p>
-            <div data-aos="fade-up" class="routes__boxes">
-                <div class="routes__box">
-                    <img src="https://placeimg.com/600/400/nature" alt="">
-                    <div class="container container--wide">
-                        <h3>Zalesie/Tumiany -> Barczewo</h3>
-                        <p>In fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie. Interdum velit laoreet id donec ultrices tincidunt.</p>
-                        <form action="#">
-                            <input type="submit" value="dowiedz się więcej"/>
-                        </form>
-                    </div>
-                </div>
-                <div class="routes__box">
-                    <img src="https://placeimg.com/600/400/any" alt="">
-                    <div class="container container--wide">
-                        <h3>Zalesie/Tumiany -> Barczewo</h3>
-                        <p>In fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie. Interdum velit laoreet id donec ultrices tincidunt.</p>
-                        <form action="#">
-                            <input type="submit" value="dowiedz się więcej"/>
-                        </form>
-                    </div>
-                </div>
-                <div class="routes__box">
-                    <img src="https://placeimg.com/600/400/arch" alt="">
-                    <div class="container container--wide">
-                        <h3>Zalesie/Tumiany -> Barczewo</h3>
-                        <p>In fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie. Interdum velit laoreet id donec ultrices tincidunt.</p>
-                        <form action="#">
-                            <input type="submit" value="dowiedz się więcej"/>
-                        </form>
-                    </div>
-                </div>
+      <div class="container container--regular">
+        <hr />
+        <h2 data-aos="fade-up">Nasze Trasy</h2>
+        <p data-aos="fade-in" class="text">
+          Spływy do 100 osób. Istnieje możliwość dowozu kajaków w wybrane
+          miejsce. Każda z tras może być dowolnie modyfikowana i dostosowywana
+          do Państwa preferencji.
+        </p>
+        <div data-aos="fade-up" class="routes__boxes">
+          <div class="routes__box">
+            <a
+              data-aos="fade-up"
+              data-fslightbox="trails"
+              href="/assets/img/trails/szlak1.png"
+            >
+              <img src="/assets/img/trails/szlak1.png" />
+            </a>
+            <div class="container container--wide">
+              <h3>Zalesie/Tumiany -> Barczewo</h3>
+              <p>
+                In fermentum posuere urna nec tincidunt praesent semper. In nibh
+                mauris cursus mattis molestie. Interdum velit laoreet id donec
+                ultrices tincidunt.
+              </p>
             </div>
-            <p data-aos="fade-up" class="info">
-                Wynajęcie kajaków na określony czas: <b>10</b> zł/h
-            </p>
+          </div>
+          <div class="routes__box">
+            <a
+              data-aos="fade-up"
+              data-fslightbox="trails"
+              href="/assets/img/trails/szlak2.png"
+            >
+              <img src="/assets/img/trails/szlak2.png" />
+            </a>
+            <div class="container container--wide">
+              <h3>Zalesie/Tumiany -> Barczewo</h3>
+              <p>
+                In fermentum posuere urna nec tincidunt praesent semper. In nibh
+                mauris cursus mattis molestie. Interdum velit laoreet id donec
+                ultrices tincidunt.
+              </p>
+            </div>
+          </div>
+          <div class="routes__box">
+            <a
+              data-aos="fade-up"
+              data-fslightbox="trails"
+              href="/assets/img/trails/szlak3.png"
+            >
+              <img src="/assets/img/trails/szlak3.png" />
+            </a>
+            <div class="container container--wide">
+              <h3>Zalesie/Tumiany -> Barczewo</h3>
+              <p>
+                In fermentum posuere urna nec tincidunt praesent semper. In nibh
+                mauris cursus mattis molestie. Interdum velit laoreet id donec
+                ultrices tincidunt.
+              </p>
+            </div>
+          </div>
+          <div class="routes__box">
+            <a
+              data-aos="fade-up"
+              data-fslightbox="trails"
+              href="/assets/img/trails/szlak4.png"
+            >
+              <img src="/assets/img/trails/szlak4.png" />
+            </a>
+            <div class="container container--wide">
+              <h3>Zalesie/Tumiany -> Barczewo</h3>
+              <p>
+                In fermentum posuere urna nec tincidunt praesent semper. In nibh
+                mauris cursus mattis molestie. Interdum velit laoreet id donec
+                ultrices tincidunt.
+              </p>
+            </div>
+          </div>
+          <div class="routes__box">
+            <a
+              data-aos="fade-up"
+              data-fslightbox="trails"
+              href="/assets/img/trails/szlak32.png"
+            >
+              <img src="/assets/img/trails/szlak32.png" />
+            </a>
+            <div class="container container--wide">
+              <h3>Zalesie/Tumiany -> Barczewo</h3>
+              <p>
+                In fermentum posuere urna nec tincidunt praesent semper. In nibh
+                mauris cursus mattis molestie. Interdum velit laoreet id donec
+                ultrices tincidunt.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+      <p data-aos="fade-up" class="info">
+        Wynajęcie kajaków na określony czas: <b>10</b> zł/h
+      </p>
     </section>
-    
+
     <section class="news" id="news">
-        <div class="container container--regular">
-            <hr>
-            <h2 data-aos="fade-up">Aktualności</h2>
-            <div class="posts container--text">
-                {% for post in site.posts %}
-                    <div data-aos="fade-in" class="post">
-                        <span class="date">{{ post.date | date_to_long_string }}</span>
-                        <h4 class="post__title">{{ post.title }}</h4>
-                        <p class="post__content">{{ post.content }}</p>
-                    </div>
-                {% endfor %}
-            </div>
+      <div class="container container--regular">
+        <hr />
+        <h2 data-aos="fade-up">Aktualności</h2>
+        <div class="posts container--text">
+          {% for post in site.posts %}
+          <div data-aos="fade-in" class="post">
+            <span class="date">{{ post.date | date_to_long_string }}</span>
+            <h4 class="post__title">{{ post.title }}</h4>
+            <p class="post__content">{{ post.content }}</p>
+          </div>
+          {% endfor %}
         </div>
+      </div>
     </section>
 
     <section class="maps" id="maps">
-        <div class="container container--regular">
-            <hr> 
-        </div>       
-        <h2 data-aos="fade-up">Znajdź Nas Na Mapie</h2>
-        <div data-aos="fade-in" id="map"></div>
+      <div class="container container--regular">
+        <hr />
+      </div>
+      <h2 data-aos="fade-up">Znajdź Nas Na Mapie</h2>
+      <div data-aos="fade-in" id="map"></div>
     </section>
 
     <footer>
-        <div class="container container--regular">
-            <div class="footer__elements">
-                <a class="logo" href="#">Kajaki Zalesie</a>
-                <div>
-                    <span>Menu</span>
-                    <ul>
-                        <li>
-                            <a href="#">Strona główna</a>
-                        </li>
-                        <li>
-                            <a href="#">Regulamin</a>
-                        </li>
-                        <li>
-                            <a href="#routes">Trasy</a>
-                        </li>
-                        <li>
-                            <a href="#gallery">Galeria</a>
-                        </li>
-                        <li>
-                            <a href="#maps">Kontakt</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <span>Kontakt</span>
-                    <ul>
-                        <li>
-                            <i class="fas fa-globe-europe"></i>
-                            Kajakowa 55, Barczewo
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            534 311 666
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            kajakibwo@gmail.com
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container container--regular">
+        <div class="footer__elements">
+          <a class="logo" href="#">Kajaki Zalesie</a>
+          <div>
+            <span>Menu</span>
+            <ul>
+              <li>
+                <a href="#">Strona główna</a>
+              </li>
+              <li>
+                <a href="#">Regulamin</a>
+              </li>
+              <li>
+                <a href="#routes">Trasy</a>
+              </li>
+              <li>
+                <a href="#gallery">Galeria</a>
+              </li>
+              <li>
+                <a href="#maps">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <span>Kontakt</span>
+            <ul>
+              <li>
+                <i class="fas fa-globe-europe"></i>
+                Kajakowa 55, Barczewo
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                534 311 666
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                kajakibwo@gmail.com
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/fslightbox.min.js"></script>
   </body>
 </html>

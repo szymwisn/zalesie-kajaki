@@ -5,8 +5,12 @@
 @media (max-width: 768px) { 
     .gallery {
         .images {
-            img {
+            a {
                 width: 100% !important;
+            }
+
+            img {
+                height: auto; 
             }
         }
     }    
@@ -61,15 +65,9 @@
 @media (max-width: 992px) { 
     .gallery {
         .images {
-            img {
+            a {
                 width: 48%;
             }
         }
-    }
- }
-
-@media (max-width: 1500px) { 
-    .routes__box {
-        margin-bottom: 30px;
     }
  }
