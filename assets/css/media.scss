@@ -3,6 +3,27 @@
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: 768px) { 
+    .footer__elements {
+        a {
+            display: block;
+            width: 100%;
+            margin-bottom: 45px;
+        }
+
+        div {
+            width: 100%;
+            margin-bottom: 45px;
+
+            a {
+                margin-bottom: 0;
+            }
+
+            ul {
+                padding: 0;
+            }
+        }
+    }
+
     .gallery {
         .images {
             a {

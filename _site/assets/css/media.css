@@ -1,4 +1,16 @@
 @media (max-width: 768px) {
+  .footer__elements a {
+    display: block;
+    width: 100%;
+    margin-bottom: 45px; }
+  .footer__elements div {
+    width: 100%;
+    margin-bottom: 45px; }
+    .footer__elements div a {
+      margin-bottom: 0; }
+    .footer__elements div ul {
+      padding: 0; }
+
   .gallery .images a {
     width: 100% !important; }
   .gallery .images img {
