@@ -1,4 +1,4 @@
 ---
-title: "Kajaki"
+title: "Zalesie Kajaki"
 layout: default
 ---

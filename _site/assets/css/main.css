@@ -43,6 +43,9 @@ hr {
   font-size: 12px;
   color: white;
   z-index: 1000; }
+  .nav__topbar a {
+    text-decoration: none;
+    color: white; }
   .nav__topbar ul {
     list-style-type: none;
     float: right; }
@@ -117,7 +120,7 @@ hr {
 
 .nav__bar {
   height: 100px;
-  padding-top: 40px; }
+  padding-top: 50px; }
   .nav__bar .logo {
     display: block;
     margin-top: 50px;
@@ -157,10 +160,9 @@ hr {
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    font-weight: bold;
-    transition: 0.1s transform ease-in-out; }
+    font-weight: bold; }
   .hero input:hover {
-    transform: scale(1.03); }
+    background-color: #ffed4b; }
 
 .about .container--regular {
   position: relative; }
@@ -272,7 +274,7 @@ hr {
 
 #map {
   display: block;
-  height: 600px; }
+  height: 500px; }
 
 .map {
   height: 400px;
@@ -296,9 +298,11 @@ footer {
     list-style: none;
     padding-left: 0; }
     footer ul li {
-      padding-top: 10px; }
+      padding-top: 10px;
+      display: flex; }
       footer ul li i {
-        padding-right: 10px; }
+        padding-right: 15px;
+        padding-top: 2px; }
   footer ul:last-child {
     padding-bottom: 50px; }
 

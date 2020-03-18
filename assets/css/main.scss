@@ -61,6 +61,11 @@ hr {
     color: white;
     z-index: 1000;
 
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
     ul {
         list-style-type: none;
         float: right;
@@ -156,7 +161,7 @@ hr {
 
 .nav__bar {
     height: 100px;
-    padding-top: 40px;
+    padding-top: 50px;
 
     .logo {
         display: block;
@@ -213,11 +218,10 @@ hr {
         border: none;
         cursor: pointer;
         font-weight: bold;
-        transition: 0.1s transform ease-in-out;     
     }
 
     input:hover {
-        transform: scale(1.03);
+        background-color: rgb(255, 237, 75)
     }
 }
 
@@ -364,7 +368,7 @@ hr {
 
 #map {
     display: block;
-    height: 600px;
+    height: 500px;
 }
 
 .map {
@@ -401,8 +405,11 @@ footer {
 
         li {
             padding-top: 10px;
+            display: flex;
+
             i {
-                padding-right: 10px;
+                padding-right: 15px;
+                padding-top: 2px;
             }
         }
     }
