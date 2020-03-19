@@ -221,7 +221,6 @@ hr {
     margin-bottom: 40px;
     transition: 0.1s transform ease-in-out; }
   .routes__boxes h3 {
-    padding: 20px 0 20px 0;
     color: #324666; }
   .routes__boxes input:hover {
     transform: scale(1.03);
