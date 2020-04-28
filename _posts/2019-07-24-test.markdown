@@ -3,5 +3,5 @@ layout: post
 title:  "🛶 This is sample test"
 date:   2019-07-23 14:07:44 +0200
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Purus sit amet volutpat consequat mauris. Sit amet consectetur adipiscing elit duis tristique sollicitudin. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Purus sit amet volutpat consequat mauris. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Sample test.
 
